@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My college</title>
+</head>
+<style>
+    body{
+        background-image:url(uniiv.jpg);
+        text-align: center;
+    }
+    .header{
+        font-size:50px;
+        font-weight:bold;
+    }
+    .address{
+        font-size:20px;
+    }
+    .courses{
+        color:red;
+        margin: 20px 0;
+        font-size: 30px;
+        }
+     .course1{
+        color:blueviolet;
+        font-size: 35px;
+
+     }
+     .course2{
+        color:blueviolet;
+        font-size:35px;
+     }
+     .course3{
+        color:blueviolet;
+        font-size:35px;
+     }
+     .scrolling-text{
+        font-size: 18px;
+            font-weight: bold;
+            margin-top: 50px;
+            overflow: hidden;
+            
+            box-sizing: border-box;
+            animation: scrolling-text 10s linear infinite;
+     }
+     @keyframes scrolling-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+     
+</style>
+<body>
+    <div class="header">Sri Ramakrishna Engineering college</div>
+    <div class="address">Vattamalai Palayam Rd, NGGO Colony, Vattamalaipalayam, Coimbatore, Tamil Nadu 641022</div>
+    <div class="courses">course offered in Sri Ramakrishna Engineering College
+        <div class="course1">Computer Science Engineering</div>
+        <div class="course2">Electrical & Electronic Engineering</div>
+        <div class="course3">Mechanical Engineering</div>
+    </div>
+    <div class="scrolling-text">Welcome to our college! Enroll now for an exciting future!</div>
+</body>
+</html>

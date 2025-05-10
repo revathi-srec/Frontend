@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coimbatore</title>
+    <style>
+        body {
+            margin: 2px;
+            padding: 2px;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: blue;
+        }
+        .landmark {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .landmark:nth-child(odd) {
+            color: green;
+            font-style: italic;
+            font-family: 'Times New Roman', serif;
+        }
+        .landmark:nth-child(even) {
+            color: purple;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+        .scroll-text {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: scrolling 10s linear infinite;
+        }
+        @keyframes scrolling {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Coimbatore</h1>
+    <div class="landmark">Gedee Car Museum</div>
+    <div class="landmark">Brookefields Mall</div>
+    <div class="landmark blink">SREC</div>
+    <div class="landmark">Marudhamalai Hill Temple</div>
+    <div class="scroll-text">Proud to be a part of Coimbatore...</div>
+</body>
+</html>

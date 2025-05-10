@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Internet Banking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .login-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 30px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-form .input-group {
+            display: flex;
+            align-items: center;
+        }
+        .login-form .get-info {
+            font-size: 0.9em;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+        .login-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .login-form .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff7e1a;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #ff751a;
+        }
+        .login-form .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+        .login-form .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-form .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-form">
+        <h2>Login to Internet Banking</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <input type="text" id="userID" name="userID" placeholder="User ID" required>
+                
+                    <img src="icon.png" alt="User Icon" width="20px">
+              
+            </div>
+            <a href="#" class="get-info">Get User ID</a>
+
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                    <img src="icon.png" alt="Password Icon" width="20px">
+                
+            </div>
+            <a href="#" class="get-info">Get Password</a>
+
+            <label for="startIn">Start In</label>
+            <select id="startIn" name="startIn" required>
+                <option value="dashboard">Dashboard</option>
+               
+            </select>
+
+            <div class="remember-me">
+                <input type="checkbox" id="rememberUserID" name="rememberUserID">
+                <label for="rememberUserID">Remember User Id</label>
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <div class="footer">
+            <a href="#">Login with Mobile Number</a>
+            <a href="#">Need Help?</a>
+        </div>
+    </div>
+
+</body>
+</html>

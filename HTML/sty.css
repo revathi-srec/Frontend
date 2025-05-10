@@ -1,0 +1,52 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 20px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
+.static-box {
+    background-color:yellowgreen;
+    
+}
+.relative-box {
+    position: relative;
+    top: 100px;
+    left: 10px;
+    background-color: #3498db;
+    z-index: 0;
+}
+.absolute-box {
+    position: absolute;
+    top:30px;
+    left: 90px;
+    background-color: #e74c3c;
+    z-index: 1;
+}
+.fixed-box {
+    position: fixed;
+    top: 150;
+    right: 0;
+    background-color: #2ecc71;
+}
+.sticky-box {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #9b59b6;
+}
+/* Additional container to demonstrate absolute positioning */
+.relative.relative-container {
+    position: relative;
+    height: 200px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+}

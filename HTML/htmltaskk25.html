@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .registration-form {
+            width:400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px dashed #000;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to bottom, #87CEEB, #E0B0FF);
+        }
+        .registration-form h2 {
+            text-align: center;
+            color: blue;
+        }
+        .registration-form table {
+            width: 100%;
+        }
+        .registration-form table td {
+            padding: 10px;
+            vertical-align: top;
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+    <div class="registration-form">
+        <h2>Student Registration Form </h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="firstName">First Name</label></td>
+                    <td><input type="text" id="firstName" name="firstName" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last Name</label></td>
+                    <td><input type="text" id="lastName" name="lastName" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number</label></td>
+                    <td><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth(DOB)</label></td>
+                    <td>
+                        
+                    <input type="date" >
+                          
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><input type="text" id="city" name="city" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pinCode">Pin Code</label></td>
+                    <td><input type="text" id="pinCode" name="pinCode" pattern="[0-9]{6}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State</label></td>
+                    <td><input type="text" id="state" name="state" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><input type="text" id="country" name="country" value="India" required></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+                        <label for="drawing">Drawing</label><br>
+                        <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                        <label for="singing">Singing</label><br>
+                        <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+                        <label for="dancing">Dancing</label><br>
+                        <input type="checkbox" id="sketching" name="hobbies" value="Sketching">
+                        <label for="sketching">Sketching</label><br>
+                        <input type="checkbox" id="others" name="hobbies" value="Others">
+                        <label for="others">Others</label><br>
+                        <input type="text" name="otherHobbies" maxlength="50" placeholder="Ex: Teaching">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td>
+                        <input type="checkbox" id="highSchool" name="qualification" value="High School(10th)">
+                        <label for="highSchool">High School(10th)</label><br>
+                        <input type="checkbox" id="higherSchool" name="qualification" value="Higher School(12th)">
+                        <label for="higherSchool">Higher School(12th)</label><br>
+                        <input type="checkbox" id="graduation" name="qualification" value="Graduation(Bachelors)">
+                        <label for="graduation">Graduation(Bachelors)</label><br>
+                        <input type="checkbox" id="postGraduation" name="qualification" value="Post Graduation(Masters)">
+                        <label for="postGraduation">Post Graduation(Masters)</label><br>
+                        <input type="checkbox" id="phd" name="qualification" value="Phd">
+                        <label for="phd">Phd</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Applied For</td>
+                    <td>
+                        <input type="radio" id="bca" name="courses" value="BCA(Bachelor of Computer Applications)" required>
+                        <label for="bca">BCA(Bachelor of Computer Applications)</label><br>
+                        <input type="radio" id="bcom" name="courses" value="B.Com(Bachelor of Commerce)" required>
+                        <label for="bcom">B.Com(Bachelor of Commerce)</label><br>
+                        <input type="radio" id="bsc" name="courses" value="B.Sc(Bachelor of Science)" required>
+                        <label for="bsc">B.Sc(Bachelor of Science)</label><br>
+                        <input type="radio" id="ba" name="courses" value="BA(Bachelor of Arts)" required>
+                        <label for="ba">BA(Bachelor of Arts)</label><br>
+                        <input type="radio" id="mca" name="courses" value="MCA(Master of Computer Applications)" required>
+                        <label for="mca">MCA(Master of Computer Applications)</label><br>
+                        <input type="radio" id="mcom" name="courses" value="M.Com(Master of Commerce)" required>
+                        <label for="mcom">M.Com(Master of Commerce)</label><br>
+                        <input type="radio" id="msc" name="courses" value="M.Sc(Master of Science)" required>
+                        <label for="msc">M.Sc(Master of Science)</label><br>
+                        <input type="radio" id="ma" name="courses" value="MA(Master of Arts)" required>
+                        <label for="ma">MA(Master of Arts)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+

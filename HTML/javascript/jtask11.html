@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function validateUsername(username){
+            const usernameRegex=/^[a-zA-Z0-9]{1,10}$/;
+            return usernameRegex.test(username);
+
+        }
+        function validatePassword(password){
+            const passwordRegex=/^[a-z0-9!@#\$%\^\&*\)\(+=._-]{8,}$/;
+            return passwordRegex.test(password);
+                }
+    while(true){
+        var username=prompt("Enter the username:");
+        var password=prompt("Enter the password:");
+
+        if (validateUsername(username) && validatePassword(password)) {
+                document.write("<h1>Welcome "+username+", how can I help you?</h1>");
+                break;
+                
+            } else {
+                alert("Invalid input. Please try again.");
+            }
+        }
+
+
+    
+    </script>
+</body>
+</html>

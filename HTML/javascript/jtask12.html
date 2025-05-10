@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let balance=0;
+        const accountNumber=prompt("Enter your account number:");
+        while(true){
+            let action=prompt("choose an action:\n1.Deposit\n2.withdraw\n3.check balance\n4.exit");
+            let amount;
+            switch(action){
+                case '1':
+                    amount=parseFloat(prompt("Enter an amount to deposit:"));
+                    if(isNaN(amount)|| amount<=0){
+                        alert("invalid");
+
+                    }
+                    else{
+                        balance+=amount;
+                        alert("Deposited:"+amount+".current Balance:"+balance);
+
+                    }
+                    break;
+                case '2':
+                    amount = parseFloat(prompt("Enter amount to withdraw:"));
+                    if (isNaN(amount) || amount <= 0) {
+                        alert("Invalid amount. Please enter a valid number.");
+            }
+                  else if (amount > balance) {
+                        alert("Insufficient balance. Current Balance: " + balance);
+                    } else {
+                        balance -= amount;
+                        alert("Withdrawn: " + amount + ". Current Balance: " + balance);
+                    }
+                    break;
+                case '3':
+                    alert("Current Balance: " + balance);
+                
+                    break;
+                 default:
+                    alert("Invalid action. Please choose a valid option.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index Example</title>
+    <style>
+        /* Styling for all boxes */
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute; /* Enable positioning */
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        /* Box 1 with lowest z-index */
+        .box1 {
+            background-color: #e74c3c; /* Red */
+            top: 50px;
+            left: 50px;
+            z-index: 2; /* Lowest z-index */
+        }
+        /* Box 2 with highest z-index */
+        .box2 {
+            background-color: #3498db; /* Blue */
+            top: 80px;
+            left: 80px;
+            z-index: 4; /* Highest z-index */
+        }
+        /* Box 3 with medium z-index */
+        .box3 {
+            background-color: #2ecc71; /* Green */
+            top: 110px;
+            left: 110px;
+            z-index: 5; /* Medium z-index */
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index Demonstration</h1>
+    <div class="box box1">2</div>
+    <div class="box box2">4</div>
+    <div class="box box3">8</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Mail Registration Form</title>
+    <style>
+        body{
+            background-color:rgb(171, 190, 190);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:100px;
+            width:400px;
+            text-align: center;
+        }
+        .registration-form{
+            background-color: white;
+            padding:10px;
+            border-radius:8px;
+            width:500px;
+            height: 400px;
+            border: 5px solid;
+        }
+        .registration-form,h2{
+            margin-bottom:20px;
+            text-align:center;
+        }
+        
+        .registration-form label{
+            margin-top:flex;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <form class="registration-form" >
+        <h2>Registration</h2>
+<label for="First Name">First Name</label>
+<input type="text" placeholder="Enter your first name" required><br><br>
+
+<label for="last name">Last Name</label>
+<input type="text" placeholder="Enter your last name" required><br><br>
+
+<label for="gender">Gender</label> 
+<input type="radio" name="gender">Female
+<input type="radio" name="gender">Male
+<input  type="radio" name="gender">Others<br><br>
+
+<!--<select name="gender" required>
+    <option value="">Select your gender
+    </option>
+    <option value="Male">Male</option>
+     <option value="female">Female</option>
+     <option value="other">other</option>
+</select>-->
+
+<label for="dob">Date of Birth</label>
+<input type="date" ><br><br>
+
+<label for="userName">User Name</label>
+<input type="text"><br><br>
+
+<label for="password">Password</label>
+<input type="password"><br><br>
+
+<label for="phone number">phone number</label>
+<input  type="tel"><br><br>
+
+<div class="checkbox-container">
+<label for="declaration">I agree to the terms and conditions</label>
+</div >
+<button type="submit">Register</button>
+</form>
+</body>
+</html>

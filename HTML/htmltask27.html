@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+        .product .price {
+            font-size: 18px;
+            color: #388e3c;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        .product .original-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+        }
+        .product .discount {
+            font-size: 14px;
+            color: #388e3c;
+        }
+        .product .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin: 8px 0;
+        }
+        .product .rating span {
+            background-color: #f4b400;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Comparison</h2>
+    <div class="container">
+        <div class="product">
+            <img src="phone.png" alt="SAMSUNG Galaxy S23 Ultra 5G">
+            <h3>SAMSUNG Galaxy S23 Ultra 5G (Green, 256 GB)</h3>
+            <div class="rating">
+                <span>4.3</span>
+                <div>(544)</div>
+            </div>
+            <div class="price">₹1,24,999</div>
+            <div class="original-price">₹1,49,999</div>
+            <div class="discount">16% off</div>
+        </div>
+        <div class="product">
+            <img src="pho1.png" alt="SAMSUNG Galaxy M14 5G">
+            <h3>SAMSUNG Galaxy M14 5G (Icy Silver, 128 GB)</h3>
+            <div class="rating">
+                <span>4.3</span>
+                <div>(87)</div>
+            </div>
+            <div class="price">₹15,497</div>
+            <div class="original-price">₹18,999</div>
+            <div class="discount">18% off</div>
+        </div>
+    </div>
+</body>
+</html>
